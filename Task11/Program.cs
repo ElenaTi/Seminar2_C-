@@ -6,12 +6,11 @@
 int result (int number)
 {
     int NumberFirst = number / 100;
-    int NumberThird = number % 100;
-    int newNumber = (NumberFirst*10) + NumberThird;
-    return newNumber;
+    int NumberThird = number % 10;
+    
+    return NumberFirst*10 + NumberThird;
 }
 
 int randomNumber = GetRandomNumber(100, 999);
 int Digit = result(randomNumber);
 Console.WriteLine($"Случайное число {randomNumber} преобразуем в {Digit}");
-//Console.WriteLine($"Случайное число {randomNumber} преобразуем в {Digit}");
