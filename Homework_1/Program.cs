@@ -13,7 +13,7 @@ int result (int number)
 if (number1 < 1000 && number1 > 99)
 {
     int Digit = result(number1);
-    Console.WriteLine($"число {number1} преобразуем в {Digit}");
+    Console.WriteLine($"Вторая цифра от введенного числа {number1} - это {Digit}.");
 }
 else
 {
